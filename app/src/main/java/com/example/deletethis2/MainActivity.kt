@@ -1,6 +1,5 @@
 package com.example.deletethis2
 
-
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
@@ -9,11 +8,9 @@ import androidx.databinding.DataBindingUtil
 import com.example.deletethis2.databinding.ActivityMainBinding
 import jp.wasabeef.richeditor.RichEditor
 
-
 class MainActivity : AppCompatActivity() {
     private var mEditor: RichEditor? = null
     private var mPreview: TextView? = null
-
 
     private lateinit var binding: ActivityMainBinding
 
@@ -35,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         //mEditor.setInputEnabled(false);
 //        mPreview = findViewById<View>(R.id.preview) as TextView
 //        mEditor!!.setOnTextChangeListener { text -> mPreview!!.text = text }
-
 
         binding.actionUndo.setOnClickListener { mEditor!!.undo() }
         binding.actionRedo.setOnClickListener { mEditor!!.redo() }
